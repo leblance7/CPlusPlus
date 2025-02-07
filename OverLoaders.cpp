@@ -24,7 +24,7 @@ int main() {
    string preferred, letter1, letter2;
 /** Prompt for the user: */
     cout <<"Would you like to combined the first letters of your name\
- or the full version of first and last name? Enter(l or letter) for single\
+ or the full version \nof first and last name? \nEnter(l or letter) for single\
   and (f or full) for the full name." << endl;
     cin >> preferred;
 
@@ -35,9 +35,11 @@ int main() {
         string letter1, letter2;
 
 /**Statements that call for the user input */
-    cout << "Enter in a letter or name for the first vars: \n";
+    cout << "Enter in a letter or name for the first vars: " << endl;
+    // cout << "Enter in a letter or name for the first vars: \n";
     cin >> letter1;
-    cout << "Enter in a letter or name for the second vars: \n";
+    cout << "Enter in a letter or name for the second vars: " << endl;
+    // cout << "Enter in a letter or name for the second vars: \n";
     cin >> letter2;
 
 /**Calling the OverLoaded method */
