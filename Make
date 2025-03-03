@@ -1,0 +1,3 @@
+#!/bin/bash
+clang++ LangAry.cpp -o LangAry;
+./LangAry;
