@@ -1,4 +1,4 @@
-Test: Test.o 
+est: Test.o 
 	clang++ Test.o -o Test
 
 Test.o: Test.cpp
