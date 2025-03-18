@@ -1,0 +1,11 @@
+ptrs: pointer.o incrm_pnt.o
+	clang++ pointer.o incrm_pnt.o -o pointer incrm_pnt
+
+pointer.o : pointer.cpp
+	clang++ pointer.cpp -o pointer
+
+incrm_pnt.o : incrm_pnt.cpp
+	clang++ incrm_pnt.cpp -o incrm_pnt
+
+.PHONY: clean
+	rm -f ptrs
