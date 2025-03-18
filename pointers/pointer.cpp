@@ -5,7 +5,7 @@ int main() {
         int * mypointer;
         
 //Both are the same, or clos e by one decimal..
-        std::cout << "mypointer address: " << &mypointer << std::endl;
+        std::cout << "\nmypointer address: " << &mypointer << std::endl;
         std::cout << "mypointer value: " << mypointer << std::endl;
         mypointer = &firstvalue;
         *mypointer = 10;

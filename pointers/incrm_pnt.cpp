@@ -11,7 +11,7 @@ int main(){
 //        ++*p; // dereference pointer, and inrement the value it points to
 //
 //        (*p)++; // dereference pointer, and post - increment the value it points to. 
-        std::cout << "All of the days of my life i will praise the Lord." << std::endl;
+        std::cout << "\nAll of the days of my life i will praise the Lord.\n" << std::endl;
         return 0;
 }
 
