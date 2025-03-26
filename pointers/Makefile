@@ -1,9 +1,7 @@
-ptrs: pointer.cpp incrm_pnt.cpp
-	clang++ pointer.cpp -o pointer 
-	clang++ incrm_pnt.cpp -o incrm_pnt
-	./pointer 
-	./incrm_pnt
+make: dclr_pnt.cpp
+	clang++ dclr_pnt.cpp -o dclr_pnt
+	./dclr_pnt
 
 .PHONY: clean
 clean:
-	rm -f Test
+	rm -f Make
