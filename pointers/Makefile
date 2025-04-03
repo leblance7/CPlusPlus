@@ -1,6 +1,6 @@
-ptrs: declare_pointer2.cpp
-	clang++ declare_pointer2.cpp -o declare_pointer2
-	./declare_pointer2
+pointers: ptr_args.cpp 
+	clang++ ptr_args.cpp -o ptr_args 
+	./ptr_args
 
 .PHONY: clean
 clean:
