@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-        std::cout << "\n";
+        std::cout << "=========\n=========";
         int firstvalue = 7, secondvalue = 23;
         int * p1, * p2;
         
@@ -14,8 +14,6 @@ int main() {
         *++p1;
         p2 = p1;
         std::cout << p2 << std::endl;
-
+        std::cout << "============" << std::endl;
         return 0;
-
 }
-

@@ -1,9 +1,7 @@
-make: dclr_pnt.cpp
-	clang++ dclr_pnt.cpp -o dclr_pnt
-	clang++ dclr_pnt2.cpp -o dclr_pnt2
-	./dclr_pnt
-	./dclr_pnt2
+ptrs: declare_pointer2.cpp
+	clang++ declare_pointer2.cpp -o declare_pointer2
+	./declare_pointer2
 
 .PHONY: clean
 clean:
-	rm -f Make
+	rm -f make
