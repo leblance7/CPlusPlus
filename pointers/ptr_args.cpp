@@ -16,15 +16,21 @@
 #include <sstream>
 
 void increment_all (int* start, int* stop) {
-        int* current = start;
+        int * current = start;
         while(current != stop) {
-                start += 7;
-                ++start; 
+//                start += 7;
+                ++(*current); // Increment the value pointed.
+                ++current; // Increment pointer.
         }        
 }
 
 void print_all(const int* start, const int* stop) {
-        const int* current = start;
+        const int * current = start;
+        while (current != stop) {
+                std::cout << "number: " << start << "  :"\
+<< *current << std::endl;
+                ++current;
+        }
 }
 
 /**Main method
@@ -32,17 +38,25 @@ void print_all(const int* start, const int* stop) {
 *       be called. */
 
 int main() {
-//int numbers[3] = {25, 50, 75};
+
         int numbers[3] = {};
         int *p = numbers;
+/** Taking input for the array */
         for(int number: numbers) {
                 std::cout << "Enter a number: " << std::endl;
                 std::cin >> *p;
                 ++p;
         } 
-        for(int number: numbers) {
-                std::cout << "number[]: " << number << std::endl;
-        }
+
+/** ===== Calling the methods ====== << */
+        increment_all(numbers, numbers + 3);          
+
+/** Printing the results from the vanilla array */
+        print_all(numbers, numbers + 3);
+//        for(int number: numbers) {
+//                std::cout << "number[]: " << number << std::endl;
+//        }
+
         std::cout << "1 Corinthians 10:31 \nSo whether you eat or drink or whatever you do, do it all for the glory of God." << std::endl;
         return 0;
 }
@@ -50,3 +64,13 @@ int main() {
 //               (*p)++; // 1) dereferences, then increments memeory value
 /** *p++ // #1 increments, and the  #2 derefences */
 //Also, adds to the value.
+
+// >>===========================> . . .
+//int numbers[3] = {25, 50, 75};
+//        int ary_length;
+//        std::cout << "Enter the amount of elements you would like to"\
+//" have in array." << std::endl;
+//        std::cin >> ary_length;
+/** As what I know now arrays must be hard coded when initalizing.
+        */
+// . . . <========================<<
