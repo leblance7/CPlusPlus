@@ -10,28 +10,41 @@
 #include <iostream>
 #include <list>
 #include <sstream>
+#include <bits/stdc++.h>
 
 double input() {
+/** define temp var for elements of array */
         double score;
+/** User output and takes answer from user in next
+ * 	two lines */
         std::cout << "Enter a test score or grade from\
  a student: " << std::endl;
         std::cin >> score;
         return score;
 }
+
+/** Creation of average(std::list <double> grades)
+ */
 std::list<double> average(std::list<double> grades) {
         return grades;
 }
 
 int main() {
         double b = input();
+/** Creating a subitiuable variable to take the input
+ * 	of the user. */
+        std::string answer =  "";
 
-        std::string answer = "";
+/** Output for the user to see */
         std::cout << "Would you like to enter another grade\
 'y', 'yes' or 'n', 'no'" << std::endl;
+
+/** Take the user input and puts it into a string */
         std::cin >> answer;
-        transform(answer.begin(), answer.end(), answer.begin,::toupper();
+        transform(answer.begin(), answer.end(), answer.begin(),::toupper);
+/** Printing the output */
         std::cout << "answer: " << answer << std::endl; 
-        //Create the list for grades
+/** Creating the list for grades */
         std::list<double> grades = {};
 
         std::cout << "Matthew 9:37 - 38 \nThen he said to his\
